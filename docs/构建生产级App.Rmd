@@ -32,5 +32,18 @@ golem::fill_desc(
   set_options = TRUE
 )
 
+# You can set another license here
+usethis::use_mit_license( name = "Golem User" )
+# Add a README, Code of Conduct, lifecycle badge and NEWS.md
+# file to your application
+usethis::use_readme_rmd( open = FALSE )
+usethis::use_code_of_conduct()
+usethis::use_lifecycle_badge( "Experimental" )
+usethis::use_news_md( open = FALSE )
+
+usethis::use_git()
+
+golem::use_recommended_tests()
+
 
 ```
