@@ -29,7 +29,8 @@ golem::use_utils_server(with_test = TRUE)
 usethis::use_git()
 usethis::use_git_remote(
   name = "origin",
-  url = "https://github.com/CMSNUT/golemShiny.git"
+  url = "https://github.com/CMSNUT/golemShiny.git",
+  overwrite = TRUE
 )
 rstudioapi::navigateToFile("dev/02_dev.R")
 

@@ -11,12 +11,13 @@ golem::add_shinyappsio_file()
 golem::add_shinyserver_file()
 rsconnect::writeManifest()
 rsconnect::deployApp(
-  appName = desc::desc_get_field("Package"),
-  appTitle = desc::desc_get_field("Package"),
+  appName = desc::desc_get_field("golemShiny"),
+  appTitle = desc::desc_get_field("golemShiny"),
   appFiles = c(
     "R/",
     "inst/",
     "data/",
+    "docs/",
     "NAMESPACE",
     "DESCRIPTION",
     "app.R"

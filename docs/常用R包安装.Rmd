@@ -49,7 +49,7 @@ if(! require("devtools")) install.packages("devtools")
 if(! require("shiny")) install.packages("shiny")
 if(! require("shinydashboard")) install.packages("shinydashboard")
 if(! require("shinydashboardPlus")) install.packages("shinydashboardPlus")
-if(! require("shinyWi")) install.packages("")
+if(! require("shinipsum")) install.packages("shinipsum")
 ```
 
 ### golem相关包
@@ -57,16 +57,20 @@ if(! require("shinyWi")) install.packages("")
 ```{r eval=FALSE}
 if(! require("golem")) install.packages("golem")
 if(! require("attachment")) install.packages("attachment")
+install.packages(c('rhub', 'rsconnect'))
 ```
 
-
+## 数据表
 ```{r eval=FALSE}
-
+if(! require("DT")) install.packages("DT")
+if(! require("writexl")) install.packages("writexl")
 ```
 
-
+## 绘图
 ```{r eval=FALSE}
-
+if(! require("ggplot2")) install.packages("ggplot2")
+if(! require("ggpubr")) install.packages("ggpubr")
+if(! require("ggmisc")) install.packages("ggmisc")
 ```
 
 
