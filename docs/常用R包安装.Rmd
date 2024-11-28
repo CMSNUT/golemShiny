@@ -74,7 +74,9 @@ if(! require("ggmisc")) install.packages("ggmisc")
 ```
 
 
+## 构建UI原型
 ```{r eval=FALSE}
-
+install.packages("shinipsum")
+install.packages("fakir")
 ```
 

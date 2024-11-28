@@ -48,7 +48,9 @@ golem::use_recommended_tests()
 ```
 
 
-## shinipsum
+## 构建UI原型
+
+### shinipsum
 
 ```{r eval=FALSE}
 library(shinipsum)
@@ -57,6 +59,8 @@ library(ggplot2)
 # 随机图
 random_ggplot() + 
   labs(title = "Random plot") 
+
+# 
 ```
 
 ### 第1个shiny程序
@@ -88,5 +92,28 @@ server <- function(input, output, session) {
 }
 shinyApp(ui, server)
 ```
+
+### fakir
+
+```{r eval=FALSE}
+library(fakir)
+
+# 包含 3 个数据集，这些数据集随机生成的
+# fake_base_clients()为工单服务生成虚拟数据集
+
+fake_visits(from = "2017-01-01", to = "2017-01-31")
+
+# fake_sondage_answers()是关于交通的虚拟调查
+
+# fake_visits()是网站访问的虚拟数据
+
+```
+
+## 添加依赖项
+- dev/02_dev.R
+
+### 软件包依赖项
+
+### usethis::use_package("pkg.you.want.to.add")
 
 

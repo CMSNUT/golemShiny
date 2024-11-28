@@ -6,9 +6,16 @@ Authors@R:
 Description: Learning golem and shiny
 License: What license is it under?
 Imports: 
+    attempt,
     config,
+    DT,
+    ggplot2,
+    glue,
     golem,
-    shiny
+    htmltools,
+    shiny,
+    shinydashboard,
+    shinydashboardPlus
 Suggests: 
     spelling,
     testthat (>= 3.0.0)
@@ -17,3 +24,5 @@ Encoding: UTF-8
 Language: en-US
 LazyData: true
 RoxygenNote: 7.3.2
+Depends: 
+    tidyverse
