@@ -3,12 +3,12 @@
 #
 golem::fill_desc(
   pkg_name = "golemShiny",
-  pkg_title = "PKG_TITLE",
-  pkg_description = "PKG_DESC.",
+  pkg_title = "Golem+Shiny",
+  pkg_description = "Learning golem and shiny",
   authors = person(
-    given = "AUTHOR_FIRST",
-    family = "AUTHOR_LAST",
-    email = "AUTHOR@MAIL.COM",
+    given = "Donghui",
+    family = "Xia",
+    email = "dhxia@snut.edu.cn",
     role = c("aut", "cre")
   ),
   repo_url = NULL,
@@ -29,6 +29,7 @@ golem::use_utils_server(with_test = TRUE)
 usethis::use_git()
 usethis::use_git_remote(
   name = "origin",
-  url = "https://github.com/<OWNER>/<REPO>.git"
+  url = "https://github.com/CMSNUT/golemShiny.git"
 )
 rstudioapi::navigateToFile("dev/02_dev.R")
+

@@ -1,0 +1,76 @@
+---
+title: "常用R包安装"
+output: 
+  github_document
+    toc: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 设置镜像
+- [参考资料](https://www.jianshu.com/p/51bf8e134539)
+
+```{r eval=FALSE}
+#查看当前镜像
+options()$repos 
+options()$BioC_mirror
+# 设置bioconductor
+options(BioC_mirror="https://mirrors.ustc.edu.cn/bioc/")
+# 设置CRAN
+options(CRAN="https://mirrors.tuna.tsinghua.edu.cn/CRAN/")
+# 检查是否设定完毕
+getOption("BioC_mirror")
+getOption("CRAN")
+
+## 查看R包安装的位置
+.libPaths()
+
+# 安装R包，注意函数括号里面的引号（''）
+# 安装CRAN镜像上的包，通过install.packages()
+# 安装bioconductor镜像上的包，通过BiocManager::install()
+# 安装github镜像上的包，通过devtools::install_github()
+##出现warning和各种红色提示，不用管，能加载成功就好！
+# 确定'待搜索安装的'包在什么镜像上，然后决定用什么函数安装
+```
+
+## 基础R包
+
+```{r eval=FALSE}
+if(! require("tidyverse")) install.packages("tidyverse")
+if(! require("devtools")) install.packages("devtools")
+```
+
+## 交互编程R包
+### shiny相关包
+
+```{r eval=FALSE}
+if(! require("shiny")) install.packages("shiny")
+if(! require("shinydashboard")) install.packages("shinydashboard")
+if(! require("shinydashboardPlus")) install.packages("shinydashboardPlus")
+if(! require("shinyWi")) install.packages("")
+```
+
+### golem相关包
+
+```{r eval=FALSE}
+if(! require("golem")) install.packages("golem")
+if(! require("attachment")) install.packages("attachment")
+```
+
+
+```{r eval=FALSE}
+
+```
+
+
+```{r eval=FALSE}
+
+```
+
+
+```{r eval=FALSE}
+
+```
+

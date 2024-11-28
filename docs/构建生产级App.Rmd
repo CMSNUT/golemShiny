@@ -1,0 +1,36 @@
+---
+title: "构建生产级App: golem + shiny"
+output: 
+  github_document
+  toc: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 参考书籍
+
+- [工程生产级Shiny应用程序](https://engineering-shiny.org/index.html)
+
+
+## 初始化golem + shiny
+
+```{r eval=FALSE}
+golem::fill_desc(
+  pkg_name = "golemShiny",
+  pkg_title = "Golem+Shiny",
+  pkg_description = "Learning golem and shiny",
+  authors = person(
+    given = "Donghui",
+    family = "Xia",
+    email = "dhxia@snut.edu.cn",
+    role = c("aut", "cre")
+  ),
+  repo_url = NULL,
+  pkg_version = "0.0.0.9000",
+  set_options = TRUE
+)
+
+
+```
